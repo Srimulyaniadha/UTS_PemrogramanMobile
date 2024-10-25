@@ -1,0 +1,53 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"> <!-- Menambahkan gravity center untuk memusatkan elemen secara vertikal dan horizontal -->
+
+    <!-- Input panjang sisi kubus -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Panjang Sisi Kubus:"
+        android:textSize="18sp"
+        android:layout_gravity="center" /> <!-- Menambahkan layout_gravity center untuk teks -->
+
+    <EditText
+        android:id="@+id/etSisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Masukkan panjang sisi"
+        android:layout_gravity="center" /> <!-- Menambahkan layout_gravity center untuk input -->
+
+    <!-- Tombol Hitung -->
+    <Button
+        android:id="@+id/btnHitung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hitung"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center" /> <!-- Menambahkan layout_gravity center untuk tombol -->
+
+    <!-- Hasil Volume -->
+    <TextView
+        android:id="@+id/tvHasilVolume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volume: "
+        android:textSize="16sp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center" /> <!-- Menambahkan layout_gravity center untuk hasil volume -->
+
+    <!-- Hasil Luas Permukaan -->
+    <TextView
+        android:id="@+id/tvHasilLuas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Luas Permukaan: "
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center" /> <!-- Menambahkan layout_gravity center untuk hasil luas -->
+</LinearLayout>
